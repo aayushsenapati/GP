@@ -7,7 +7,9 @@ using namespace std;
 class Base {
 public:
 	// pure virtual function
-	virtual void show() = 0;
+	virtual void show(){
+		cout << "In \n";
+	};
 };
 
 class Derived : public Base {
@@ -23,7 +25,7 @@ int main()
 	Base* bp = new Derived();
 
 	// calling the show() function using the pointer
-	bp->show();
+	//bp->show();
 
 	return 0;
 }
